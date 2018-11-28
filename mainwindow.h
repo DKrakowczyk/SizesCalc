@@ -9,6 +9,7 @@
 #include <QDataStream>
 
 #include "database.h"
+#include "choose.h"
 namespace Ui {
 class MainWindow;
 }
@@ -27,6 +28,8 @@ private slots:
     void on_addDatabase_clicked();
 
     void on_actionWy_wietl_baz_danych_triggered();
+    void on_pushButton_2_clicked();
+
 public slots:
     void showMainWindow();
 
@@ -36,6 +39,7 @@ private:
     void db_placeholder();
     QString dbPath;
     database *db;
+    Choose *choose;
 };
 
 #endif // MAINWINDOW_H

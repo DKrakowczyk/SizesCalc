@@ -74,3 +74,10 @@ void MainWindow::showMainWindow()
 {
     ui->centralWidget->show();
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    choose = new Choose(this);
+
+    choose->show();
+}
