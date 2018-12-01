@@ -49,7 +49,9 @@ void database::on_tableView_doubleClicked(const QModelIndex &index)
 {
     QString id = index.siblingAtColumn(0).data().toString();
     bazaDanych->deleteRow(id.toInt());
-    qDebug() << id;
+    QMessageBox::information(this, tr("Komunikat bazy danych"),
+        tr("Element o id %1 został pomyślnie usunięty!")
+            .arg(id));
     this->refresh();
     this->repaint();
 }

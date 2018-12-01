@@ -11,7 +11,7 @@ void BazaDanych::startDb(){
     if(!mydb.open()){
        status = "błąd połączenia z bazą danych...";
     } else{
-       status = "Połączono z bazą danych!";
+       status = "Połączono z bazą danych!  |  Podwójne klinięcie w rekord kasuje element z bazy";
     }
 }
 
