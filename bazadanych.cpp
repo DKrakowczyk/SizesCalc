@@ -28,44 +28,27 @@ QSqlQueryModel * BazaDanych::getData(QString q){
         return model;
 }
 
-void BazaDanych::deleteRow(QString row){
+void BazaDanych::deleteRow(int row){
     QSqlQuery * query = new QSqlQuery(mydb);
-    query->prepare("delete from users where login = :row");
-    query->bindValue(":row", row);
+    query->prepare("delete from wyniki where ID = :id");
+    query->bindValue(":id", row);
     query->exec();
 }
 
-void BazaDanych::addElement(QString login, QString password)
+void BazaDanych::addElement(QString srednica, QString wysokosc, QString dlugosc, QString odpad, QString przekroj, QString promien, QString bok)
 {
     QSqlQuery * query = new QSqlQuery(mydb);
-    query->prepare("INSERT INTO users(login,password) VALUES(:log,:pass)");
-    query->bindValue(":log", login);
-    query->bindValue(":pass", password);
-    query->exec();
-}
-bool BazaDanych::userExist(QString login, QString password)
-{
-    QSqlQueryModel *  model = new QSqlQueryModel();
-    QSqlQuery * query = new QSqlQuery(mydb);
-    query->prepare("SELECT login FROM users WHERE login = :log AND password= :pass");
-    query->bindValue(":log", login);
-    query->bindValue(":pass", password);
-    query->exec();
-    model->setQuery(*query);
-   mydb.close();
-    if(  model->data(model->index(0,0)).toString() == "") return false;
-    else return true;
+    query->prepare("INSERT INTO wyniki(srednica_wlewka,wysokosc_wlewka, dlugosc_preta, V_odpadu, przekroj_preta, promien_preta, bok_preta) VALUES(:srednica,:wysokosc,:dlugosc,:odpad,:przekroj,:promien,:bok)");
 
-}
-void BazaDanych::changeData(QString row,QString log, QString pass){
-    QSqlQuery * query = new QSqlQuery(mydb);
-    query->prepare("update users set login = :log, password= :pass where login = :row");
-    query->bindValue(":row", row);
-    query->bindValue(":log", log);
-    query->bindValue(":pass", pass);
+    query->bindValue(":srednica", srednica);
+    query->bindValue(":wysokosc", wysokosc);
+    query->bindValue(":dlugosc", dlugosc);
+    query->bindValue(":odpad", odpad);
+    query->bindValue(":przekroj", przekroj);
+    query->bindValue(":promien", promien);
+    query->bindValue(":bok", bok);
     query->exec();
 }
-
 
 BazaDanych::~BazaDanych(){
     mydb.close();

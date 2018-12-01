@@ -15,10 +15,10 @@ public:
     void startDb();
     QString getStatus();
     QSqlQueryModel * getData(QString);
-    void deleteRow(QString);
+    void deleteRow(int);
     void changeData(QString,QString,QString);
     bool userExist(QString,QString);
-    void addElement(QString, QString);
+    void addElement(QString, QString, QString, QString, QString, QString, QString);
 };
 
 #endif // BAZADANYCH_H

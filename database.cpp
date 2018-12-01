@@ -25,7 +25,7 @@ void database::on_closeButton_clicked()
 }
 
 void database::refresh(){
-ui->tableView->setModel(bazaDanych->getData("select * from users"));
+ui->tableView->setModel(bazaDanych->getData("select * from wyniki"));
 }
 
 void database::setDbPath(){
@@ -44,3 +44,12 @@ void database::setDbPath(){
 
 }
 
+
+void database::on_tableView_doubleClicked(const QModelIndex &index)
+{
+    QString id = index.siblingAtColumn(0).data().toString();
+    bazaDanych->deleteRow(id.toInt());
+    qDebug() << id;
+    this->refresh();
+    this->repaint();
+}

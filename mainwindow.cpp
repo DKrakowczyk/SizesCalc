@@ -78,6 +78,5 @@ void MainWindow::showMainWindow()
 void MainWindow::on_pushButton_2_clicked()
 {
     choose = new Choose(this);
-
     choose->show();
 }
