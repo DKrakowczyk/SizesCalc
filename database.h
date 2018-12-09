@@ -23,9 +23,7 @@ signals:
     void closeWindow();
 private slots:
     void on_closeButton_clicked();
-
     void on_tableView_doubleClicked(const QModelIndex &index);
-
 private:
     Ui::database *ui;
     void setDbPath();

@@ -21,18 +21,13 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
 private slots:
     void on_closeButton_clicked();
-
     void on_addDatabase_clicked();
-
     void on_actionWy_wietl_baz_danych_triggered();
     void on_pushButton_2_clicked();
-
 public slots:
     void showMainWindow();
-
 private:
     Ui::MainWindow *ui;
     void setConnectionString(QString);

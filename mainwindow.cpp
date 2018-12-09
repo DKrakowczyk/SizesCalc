@@ -26,7 +26,8 @@ void MainWindow::setConnectionString(QString str)
     QFile file;
     file.setFileName("con_string.txt");
 
-    if (file.open(QIODevice::WriteOnly)) {
+    if (file.open(QIODevice::WriteOnly))
+    {
         QMessageBox::information(this, tr("Komunikat serwera"), tr("Pomyślnie zapisano ścieżkę bazy danych"));
         QTextStream stream(&file);
         stream << str;
@@ -39,27 +40,31 @@ void MainWindow::db_placeholder()
     QFile file;
     file.setFileName("con_string.txt");
 
-    if (file.open((QIODevice::ReadOnly))) {
+    if (file.open((QIODevice::ReadOnly)))
+    {
         QTextStream in(&file);
         QString placeholder = in.readLine();
 
-        if (placeholder != "") {
+        if (placeholder != "")
+        {
             ui->dbPath->setText(placeholder);
         }
-        else {
+        else
+        {
             ui->dbPath->setText("Wybierz bazę danych...");
         }
     }
+
     file.close();
 }
 
 void MainWindow::on_addDatabase_clicked()
 {
     dbPath = QFileDialog::getOpenFileName(
-        this,
-        tr("Wybierz Bazę danych"),
-        "../",
-        "Pliki Bazy SQLITE (*.db)");
+                 this,
+                 tr("Wybierz Bazę danych"),
+                 "../",
+                 "Pliki Bazy SQLITE (*.db)");
 
     ui->dbPath->setText(dbPath);
     setConnectionString(dbPath);
