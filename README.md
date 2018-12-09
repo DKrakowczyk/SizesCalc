@@ -39,8 +39,7 @@ W razie konieczności zapisu danych pomiarowych oraz wyników w bazie danych, w 
 
  Wcisnąć przycisk **“Baza Danych”**, a następnie wybrać **“Wyświetl bazę danych”** w głównym oknie programu.
  
-![Okno bazy danych]
-(https://ibb.co/TgDkqsv)
+![Okno bazy danych](https://ibb.co/TgDkqsv)
 
 Przeglądanie zawartości bazy danych możliwe jest za pomocą **suwaka** na dole tabeli.
 
