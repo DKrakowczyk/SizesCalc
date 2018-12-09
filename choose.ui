@@ -1065,10 +1065,10 @@ QProgressBar::chunk {
          <string> mm^3</string>
         </property>
         <property name="maximum">
-         <double>10000000.000000000000000</double>
+         <double>100000000000.000000000000000</double>
         </property>
         <property name="value">
-         <double>17452.299999999999272</double>
+         <double>13197.549999999999272</double>
         </property>
        </widget>
       </item>
@@ -1114,7 +1114,7 @@ QProgressBar::chunk {
              <string> mm</string>
             </property>
             <property name="maximum">
-             <double>100000.000000000000000</double>
+             <double>100000000000.000000000000000</double>
             </property>
             <property name="value">
              <double>8.000000000000000</double>
@@ -1165,7 +1165,7 @@ QProgressBar::chunk {
              <string> mm</string>
             </property>
             <property name="maximum">
-             <double>100000.000000000000000</double>
+             <double>100000000000.000000000000000</double>
             </property>
             <property name="value">
              <double>8.000000000000000</double>
@@ -1195,7 +1195,7 @@ QProgressBar::chunk {
            <string>  mm</string>
           </property>
           <property name="maximum">
-           <double>100000.000000000000000</double>
+           <double>100000000000.000000000000000</double>
           </property>
           <property name="value">
            <double>80.000000000000000</double>
@@ -1276,7 +1276,7 @@ QProgressBar::chunk {
            <string>  mm</string>
           </property>
           <property name="maximum">
-           <double>100000.000000000000000</double>
+           <double>100000000000.000000000000000</double>
           </property>
           <property name="value">
            <double>80.000000000000000</double>
@@ -1325,7 +1325,7 @@ QProgressBar::chunk {
            <string> mm</string>
           </property>
           <property name="maximum">
-           <double>100000.000000000000000</double>
+           <double>100000000000.000000000000000</double>
           </property>
           <property name="value">
            <double>8.000000000000000</double>
@@ -1378,7 +1378,7 @@ QProgressBar::chunk {
              <string> mm</string>
             </property>
             <property name="maximum">
-             <double>100000.000000000000000</double>
+             <double>100000000000.000000000000000</double>
             </property>
             <property name="value">
              <double>8.000000000000000</double>
@@ -1437,7 +1437,7 @@ QProgressBar::chunk {
              <string> mm</string>
             </property>
             <property name="maximum">
-             <double>999999.000000000000000</double>
+             <double>100000000000.000000000000000</double>
             </property>
            </widget>
           </item>
@@ -1486,7 +1486,7 @@ QProgressBar::chunk {
            <string> mm</string>
           </property>
           <property name="maximum">
-           <double>100000.000000000000000</double>
+           <double>100000000000.000000000000000</double>
           </property>
           <property name="value">
            <double>45.000000000000000</double>
@@ -1508,7 +1508,7 @@ QProgressBar::chunk {
          <string> mm</string>
         </property>
         <property name="maximum">
-         <double>999999.000000000000000</double>
+         <double>100000000000.000000000000000</double>
         </property>
        </widget>
       </item>
@@ -1531,7 +1531,7 @@ QProgressBar::chunk {
            <string> mm</string>
           </property>
           <property name="maximum">
-           <double>100000.000000000000000</double>
+           <double>100000000000.000000000000000</double>
           </property>
           <property name="value">
            <double>45.000000000000000</double>
@@ -1639,10 +1639,10 @@ QProgressBar::chunk {
          <string> mm^3</string>
         </property>
         <property name="maximum">
-         <double>10000000.000000000000000</double>
+         <double>100000000000.000000000000000</double>
         </property>
         <property name="value">
-         <double>17452.299999999999272</double>
+         <double>13197.549999999999272</double>
         </property>
        </widget>
       </item>

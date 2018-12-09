@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     db_placeholder();
+    QPixmap pic(":data/img.png");
+    ui->imageBox->setPixmap(pic);
 }
 
 MainWindow::~MainWindow()

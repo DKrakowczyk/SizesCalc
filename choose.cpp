@@ -171,6 +171,7 @@ void Choose::on_pret_objetosc_valueChanged(const QString &arg1)
 
 void Choose::on_zapisz_dlugosc_clicked()
 {
+    if(db_placeholder()!=""){
 BazaDanych* baza = new BazaDanych("QSQLITE", db_placeholder());
 
 double wymiarPromien = ui->wlewek_promien->value();
@@ -192,11 +193,16 @@ else{
                      "KWADRAT","-",QString::number(wymiarA)+" mm");
     QMessageBox::information(this, tr("Komunikat arkusza"),
     tr("Pomyślnie zapisano do bazy danych!"));
-}
+}}
+    else{
+        QMessageBox::information(this, tr("Komunikat arkusza"),
+        tr("Skonfiguruj ścieżę do bazy danych!"));
+    }
 }
 
 void Choose::on_zapisz_wysokosc_clicked()
 {
+    if(db_placeholder()!=""){
     BazaDanych* baza = new BazaDanych("QSQLITE", db_placeholder());
     double wymiarPromien = ui->pret_promien->value();
     double wymiarA = ui->pret_a->value();
@@ -218,6 +224,11 @@ void Choose::on_zapisz_wysokosc_clicked()
         QMessageBox::information(this, tr("Komunikat arkusza"),
         tr("Pomyślnie zapisano do bazy danych!"));
     }
+    }
+        else{
+            QMessageBox::information(this, tr("Komunikat arkusza"),
+            tr("Skonfiguruj ścieżę do bazy danych!"));
+        }
 }
 
 QString Choose::db_placeholder()
@@ -231,6 +242,10 @@ QString Choose::db_placeholder()
 
         if (placeholder != "") {
             return placeholder;
+        }
+        else
+        {
+            return "";
         }
     }
     file.close();

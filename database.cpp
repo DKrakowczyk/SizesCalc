@@ -25,7 +25,8 @@ void database::on_closeButton_clicked()
 }
 
 void database::refresh(){
-ui->tableView->setModel(bazaDanych->getData("select * from wyniki"));
+ui->tableView->setModel(bazaDanych->getData("select id, srednica_wlewka,wysokosc_wlewka, dlugosc_preta, V_odpadu, przekroj_preta, promien_preta, bok_preta from wyniki"));
+ui->tableView->hideColumn(0);
 }
 
 void database::setDbPath(){
@@ -47,11 +48,13 @@ void database::setDbPath(){
 
 void database::on_tableView_doubleClicked(const QModelIndex &index)
 {
+     int ind = index.row()+1;
+
     QString id = index.siblingAtColumn(0).data().toString();
     bazaDanych->deleteRow(id.toInt());
     QMessageBox::information(this, tr("Komunikat bazy danych"),
         tr("Element o id %1 został pomyślnie usunięty!")
-            .arg(id));
+            .arg(ind));
     this->refresh();
     this->repaint();
 }
