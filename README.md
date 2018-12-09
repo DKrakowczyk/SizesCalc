@@ -15,7 +15,7 @@ Aplikacja składa się z trzech głównych okien użytkownika :
 > Okno bazy danych
 
 
-![Okno wyboru](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/839692c5-d86c-4b15-b617-6aedeb893d5d/dcu0e9y-b84736bf-7f7b-4774-82fd-6de887e432ee.png)
+![Okno wyboru](https://github.com/DKrakowczyk/SizesCalc/blob/master/screenshots/main.PNG?raw=true)
 
 
 ### #Połączenie z bazą danych
@@ -31,7 +31,7 @@ W celu uzyskania długości pręta konieczne jest uzupełnienie wartościami pó
  
 Możliwa jest również zmiana zadanej objętości odpadu lub przyjęcie jej domyślnej wartości. 
 
-![Okno arkusza kalkulacyjnego](https://lh3.googleusercontent.com/FbJGDzL1SBMnTBSKNhq4_j4Cjb0KSsVogiOjzdVOU9ZroTpIYLrdbUdB_yBan6jXqF9dLsaGgPV7NzD6nz31=w1366-h657-rw)
+![Okno arkusza kalkulacyjnego](https://github.com/DKrakowczyk/SizesCalc/blob/master/screenshots/calculate.PNG?raw=true)
 
 W razie konieczności zapisu danych pomiarowych oraz wyników w bazie danych, w celu ich późniejszego wykorzystania, konieczne jest wciśnięcie przycisku **“Zapisz do bazy danych”**.
 
@@ -39,7 +39,7 @@ W razie konieczności zapisu danych pomiarowych oraz wyników w bazie danych, w 
 
  Wcisnąć przycisk **“Baza Danych”**, a następnie wybrać **“Wyświetl bazę danych”** w głównym oknie programu.
  
-![Baza](https://lh4.googleusercontent.com/N0FUzRrwAMi5eXEJUzAOQPbjOpK45iQk8dUKtXSgFTVSquki6l5uU7Ob7FJrkFG4cvjsmsh-3SL-S9WsnZu5=w1366-h657)
+![Baza](https://github.com/DKrakowczyk/SizesCalc/blob/master/screenshots/database.PNG?raw=true)
 
 Przeglądanie zawartości bazy danych możliwe jest za pomocą **suwaka** na dole tabeli.
 
