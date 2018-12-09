@@ -15,7 +15,7 @@ Aplikacja składa się z trzech głównych okien użytkownika :
 > Okno bazy danych
 
 
-![Okno wyboru](https://lh3.googleusercontent.com/zC6-iRCg85XK19a1iIvMKlX09tLxY12vj-9Dhzu4kFPlLNjd7ZaQecrDZGwMyU8bll8PVJz2a8Sjof2uvvuY=w1366-h657)
+![Okno wyboru](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/839692c5-d86c-4b15-b617-6aedeb893d5d/dcu0e9y-b84736bf-7f7b-4774-82fd-6de887e432ee.png)
 
 
 ### #Połączenie z bazą danych
