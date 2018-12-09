@@ -39,7 +39,7 @@ W razie konieczności zapisu danych pomiarowych oraz wyników w bazie danych, w 
 
  Wcisnąć przycisk **“Baza Danych”**, a następnie wybrać **“Wyświetl bazę danych”** w głównym oknie programu.
  
- ![Okno bazy danych](https://lh4.googleusercontent.com/N0FUzRrwAMi5eXEJUzAOQPbjOpK45iQk8dUKtXSgFTVSquki6l5uU7Ob7FJrkFG4cvjsmsh-3SL-S9WsnZu5=w1366-h657)
+ ![Okno bazy danych](https://lh4.googleusercontent.com/N0FUzRrwAMi5eXEJUzAOQPbjOpK45iQk8dUKtXSgFTVSquki6l5uU7Ob7FJrkFG4cvjsmsh-3SL-S9WsnZu5=w1366-h657 )
 
 Przeglądanie zawartości bazy danych możliwe jest za pomocą **suwaka** na dole tabeli.
 
