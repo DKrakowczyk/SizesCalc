@@ -31,7 +31,7 @@ W celu uzyskania długości pręta konieczne jest uzupełnienie wartościami pó
  
 Możliwa jest również zmiana zadanej objętości odpadu lub przyjęcie jej domyślnej wartości. 
 
-![Okno arkusza kalkulacyjnego](https://lh5.googleusercontent.com/JnneRU8Q_YNzkHfkZYZ7iTu2CRLpBl0Zk_9WJk4yo00-HoRF3vdbda8xBDSMMyyQsg8NtpL9PlqOegi5KX62=w1366-h657-rw)
+![Okno arkusza kalkulacyjnego](https://lh3.googleusercontent.com/FbJGDzL1SBMnTBSKNhq4_j4Cjb0KSsVogiOjzdVOU9ZroTpIYLrdbUdB_yBan6jXqF9dLsaGgPV7NzD6nz31=w1366-h657-rw)
 
 W razie konieczności zapisu danych pomiarowych oraz wyników w bazie danych, w celu ich późniejszego wykorzystania, konieczne jest wciśnięcie przycisku **“Zapisz do bazy danych”**.
 
