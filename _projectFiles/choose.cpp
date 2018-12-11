@@ -10,6 +10,8 @@ Choose::Choose(QWidget *parent) :
     ui->setupUi(this);
     oblicz();
     oblicz_wysokosc();
+    ui->wlewek_prostokat_button->setStyleSheet("border-color:#023303;background-color:#347535;");
+    ui->pret_kwadrat->setStyleSheet("border-color:#023303;background-color:#347535;");
 }
 
 Choose::~Choose()
@@ -21,6 +23,8 @@ void Choose::on_wlewek_kolo_button_clicked()
 {
     ui->wlewek_type->setText("Koło");
     ui->wlewek_promien->setEnabled(1);
+    ui->wlewek_kolo_button->setStyleSheet("border-color:#023303;background-color:#347535;");
+    ui->wlewek_prostokat_button->setStyleSheet("background-color:none;");
     ui->wlewek_a->setDisabled(1);
     oblicz();
 }
@@ -29,13 +33,18 @@ void Choose::on_wlewek_prostokat_button_clicked()
 {
     ui->wlewek_type->setText("Kwadrat");
     ui->wlewek_promien->setDisabled(1);
+    ui->wlewek_kolo_button->setStyleSheet("background-color:none;");
+    ui->wlewek_prostokat_button->setStyleSheet("border-color:#023303;background-color:#347535;");
     ui->wlewek_a->setEnabled(1);
     oblicz();
 }
 
 void Choose::on_wlewek_zmienObjetosc_clicked()
 {
-    ui->wlewek_objetosc->setEnabled(1);
+    if(ui->wlewek_objetosc->isEnabled())
+        ui->wlewek_objetosc->setDisabled(1);
+    else
+        ui->wlewek_objetosc->setEnabled(1);
     oblicz();
 }
 //Update final score when value is changed
@@ -67,11 +76,13 @@ void Choose::oblicz()
     if(wynik>0)
     {
         ui->wlewek_wynik->setValue(wynik);
+        ui->wlewek_wynik->setStyleSheet("border-color:#023303;background-color:#347535;");
         ui->wlewek_wynik->setSuffix(" mm");
     }
     else
     {
         ui->wlewek_wynik->setValue(0);
+        ui->wlewek_wynik->setStyleSheet("border-color:#3a0501;background-color:#99140a;");
         ui->wlewek_wynik->setSuffix(" BŁĄD");
     }
 }
@@ -80,6 +91,8 @@ void Choose::on_pret_kolo_clicked()
 {
     ui->pret_type->setText("Koło");
     ui->pret_promien->setEnabled(1);
+    ui->pret_kolo->setStyleSheet("border-color:#023303;background-color:#347535;");
+    ui->pret_kwadrat->setStyleSheet("background-color:none;");
     ui->pret_a->setDisabled(1);
     oblicz_wysokosc();
 }
@@ -88,13 +101,18 @@ void Choose::on_pret_kwadrat_clicked()
 {
     ui->pret_type->setText("Kwadrat");
     ui->pret_promien->setDisabled(1);
+    ui->pret_kolo->setStyleSheet("background-color:none;");
+    ui->pret_kwadrat->setStyleSheet("border-color:#023303;background-color:#347535;");
     ui->pret_a->setEnabled(1);
     oblicz_wysokosc();
 }
 
 void Choose::on_pret_zmienObjetosc_clicked()
 {
-    ui->pret_objetosc->setEnabled(1);
+    if(ui->pret_objetosc->isEnabled())
+        ui->pret_objetosc->setDisabled(1);
+    else
+        ui->pret_objetosc->setEnabled(1);
     oblicz_wysokosc();
 }
 
@@ -120,15 +138,18 @@ void Choose::oblicz_wysokosc()
     wlewekV = wynik+odpad;
     h = (4*wlewekV)/(M_PI*qPow(srednica,2));
 
-    if(h>0)
+
+    if(ui->pret_a->value()==0.0 || ui->pret_promien->value()==0.0 || ui->pret_srednica->value()==0.0 || ui->pret_wysokosc->value()==0.0 )
     {
-        ui->pret_wynik->setValue(h);
-        ui->pret_wynik->setSuffix(" mm");
+        ui->pret_wynik->setValue(0);
+        ui->pret_wynik->setStyleSheet("border-color:#3a0501;background-color:#99140a;");
+        ui->pret_wynik->setSuffix(" BŁĄD");
     }
     else
     {
-        ui->pret_wynik->setValue(0);
-        ui->pret_wynik->setSuffix(" BŁĄD");
+        ui->pret_wynik->setValue(h);
+        ui->pret_wynik->setStyleSheet("border-color:#023303;background-color:#347535;");
+        ui->pret_wynik->setSuffix(" mm");
     }
 }
 //Update final score when value is changed

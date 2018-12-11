@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Arkusz Kalkulacyjny</string>
+   <string>Arkusz kalkulacyjny</string>
   </property>
   <property name="styleSheet">
    <string notr="true">/*
@@ -1074,8 +1074,33 @@ QProgressBar::chunk {
       </item>
      </layout>
     </item>
-    <item row="3" column="2">
-     <layout class="QVBoxLayout" name="verticalLayout_28">
+    <item row="7" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_16">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QDoubleSpinBox" name="wlewek_wynik">
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="suffix">
+             <string> mm</string>
+            </property>
+            <property name="maximum">
+             <double>100000000000.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_26">
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_11">
         <item>
@@ -1095,7 +1120,7 @@ QProgressBar::chunk {
              </size>
             </property>
             <property name="text">
-             <string>Promień pręta</string>
+             <string>Średnica pręta</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -1146,7 +1171,7 @@ QProgressBar::chunk {
              <number>-1</number>
             </property>
             <property name="text">
-             <string>Wymiar a</string>
+             <string>Krawędź pręta</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -1173,297 +1198,6 @@ QProgressBar::chunk {
            </widget>
           </item>
          </layout>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item row="5" column="2">
-     <layout class="QVBoxLayout" name="verticalLayout_30">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_13">
-        <item>
-         <widget class="QLabel" name="label_3">
-          <property name="text">
-           <string>Podaj długość pręta: </string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QDoubleSpinBox" name="pret_wysokosc">
-          <property name="suffix">
-           <string>  mm</string>
-          </property>
-          <property name="maximum">
-           <double>100000000000.000000000000000</double>
-          </property>
-          <property name="value">
-           <double>80.000000000000000</double>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item row="0" column="2">
-     <layout class="QVBoxLayout" name="verticalLayout_22">
-      <item>
-       <widget class="QLabel" name="label_5">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>OBLICZANIE WYSOKOŚCI WLEWKA</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="Line" name="line_15">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item row="5" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout_29">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_5">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout_35">
-          <item>
-           <widget class="QPushButton" name="wlewek_kolo_button">
-            <property name="text">
-             <string>KOŁO</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="QPushButton" name="wlewek_prostokat_button">
-          <property name="text">
-           <string>KWADRAT</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item row="2" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout_25">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>Podaj wysokość wlewka: </string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QDoubleSpinBox" name="wlewek_wysokosc">
-          <property name="suffix">
-           <string>  mm</string>
-          </property>
-          <property name="maximum">
-           <double>100000000000.000000000000000</double>
-          </property>
-          <property name="value">
-           <double>80.000000000000000</double>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item row="6" column="0">
-     <layout class="QHBoxLayout" name="horizontalLayout_7">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
-        <item>
-         <widget class="QLabel" name="label_7">
-          <property name="minimumSize">
-           <size>
-            <width>25</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>25</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>Promień pręta</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QDoubleSpinBox" name="wlewek_promien">
-          <property name="enabled">
-           <bool>false</bool>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-          <property name="suffix">
-           <string> mm</string>
-          </property>
-          <property name="maximum">
-           <double>100000000000.000000000000000</double>
-          </property>
-          <property name="value">
-           <double>8.000000000000000</double>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_7">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout_8">
-          <item>
-           <widget class="QLabel" name="label_8">
-            <property name="minimumSize">
-             <size>
-              <width>25</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>25</height>
-             </size>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Sunken</enum>
-            </property>
-            <property name="midLineWidth">
-             <number>-1</number>
-            </property>
-            <property name="text">
-             <string>Wymiar a</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QDoubleSpinBox" name="wlewek_a">
-            <property name="enabled">
-             <bool>false</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <property name="suffix">
-             <string> mm</string>
-            </property>
-            <property name="maximum">
-             <double>100000000000.000000000000000</double>
-            </property>
-            <property name="value">
-             <double>8.000000000000000</double>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item row="1" column="2">
-     <layout class="QVBoxLayout" name="verticalLayout_24">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_6">
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_9">
-          <item>
-           <widget class="QLabel" name="pret_type">
-            <property name="enabled">
-             <bool>true</bool>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>10</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>WYBIERZ PRZEKRÓJ PRĘTA (domyślnie kwadrat)</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item row="7" column="0">
-     <layout class="QVBoxLayout" name="verticalLayout_16">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_9">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <widget class="QDoubleSpinBox" name="wlewek_wynik">
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <property name="suffix">
-             <string> mm</string>
-            </property>
-            <property name="maximum">
-             <double>100000000000.000000000000000</double>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item row="2" column="2">
-     <layout class="QVBoxLayout" name="verticalLayout_26">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_10">
-        <item>
-         <widget class="QPushButton" name="pret_kolo">
-          <property name="text">
-           <string>KOŁO</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pret_kwadrat">
-          <property name="text">
-           <string>KWADRAT</string>
-          </property>
-         </widget>
         </item>
        </layout>
       </item>
@@ -1511,6 +1245,203 @@ QProgressBar::chunk {
          <double>100000000000.000000000000000</double>
         </property>
        </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_28">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QPushButton" name="pret_zmienObjetosc">
+          <property name="text">
+           <string>Zmień objętość odpadu: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="pret_objetosc">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="suffix">
+           <string> mm^3</string>
+          </property>
+          <property name="maximum">
+           <double>100000000000.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>13197.549999999999272</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_22">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>OBLICZANIE WYSOKOŚCI WLEWKA</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_15">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_29">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="minimumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Średnica pręta</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="wlewek_promien">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="suffix">
+             <string> mm</string>
+            </property>
+            <property name="maximum">
+             <double>100000000000.000000000000000</double>
+            </property>
+            <property name="value">
+             <double>8.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="minimumSize">
+               <size>
+                <width>25</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="midLineWidth">
+               <number>-1</number>
+              </property>
+              <property name="text">
+               <string>Krawędź pręta</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="wlewek_a">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="suffix">
+               <string> mm</string>
+              </property>
+              <property name="maximum">
+               <double>100000000000.000000000000000</double>
+              </property>
+              <property name="value">
+               <double>8.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_25">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Podaj wysokość wlewka: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="wlewek_wysokosc">
+          <property name="suffix">
+           <string>  mm</string>
+          </property>
+          <property name="maximum">
+           <double>100000000000.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>80.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </item>
@@ -1583,23 +1514,22 @@ QProgressBar::chunk {
     <item row="4" column="0">
      <layout class="QVBoxLayout" name="verticalLayout_33">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
         <item>
-         <widget class="QLabel" name="wlewek_type">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>10</height>
-           </size>
-          </property>
+         <layout class="QVBoxLayout" name="verticalLayout_35">
+          <item>
+           <widget class="QPushButton" name="wlewek_kolo_button">
+            <property name="text">
+             <string>KOŁO</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="wlewek_prostokat_button">
           <property name="text">
-           <string>WYBIERZ PRZEKRÓJ PRĘTA (domyślnie kwadrat)</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
+           <string>KWADRAT</string>
           </property>
          </widget>
         </item>
@@ -1618,36 +1548,6 @@ QProgressBar::chunk {
       </item>
      </layout>
     </item>
-    <item row="6" column="2">
-     <layout class="QVBoxLayout" name="verticalLayout_10">
-      <item>
-       <widget class="QPushButton" name="pret_zmienObjetosc">
-        <property name="text">
-         <string>Zmień objętość odpadu: </string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QDoubleSpinBox" name="pret_objetosc">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="suffix">
-         <string> mm^3</string>
-        </property>
-        <property name="maximum">
-         <double>100000000000.000000000000000</double>
-        </property>
-        <property name="value">
-         <double>13197.549999999999272</double>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
     <item row="8" column="1">
      <widget class="QRadioButton" name="radioButton">
       <property name="maximumSize">
@@ -1661,7 +1561,103 @@ QProgressBar::chunk {
       </property>
      </widget>
     </item>
+    <item row="5" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_30">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Podaj długość pręta: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDoubleSpinBox" name="pret_wysokosc">
+          <property name="suffix">
+           <string>  mm</string>
+          </property>
+          <property name="maximum">
+           <double>100000000000.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>80.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QPushButton" name="pret_kolo">
+        <property name="text">
+         <string>KOŁO</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pret_kwadrat">
+        <property name="text">
+         <string>KWADRAT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="wlewek_type">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>-350</x>
+     <y>560</y>
+     <width>401</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>WYBIERZ PRZEKRÓJ PRĘTA (domyślnie kwadrat)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pret_type">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>550</y>
+     <width>399</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>10</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>WYBIERZ PRZEKRÓJ PRĘTA (domyślnie kwadrat)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
  </widget>
  <resources/>
