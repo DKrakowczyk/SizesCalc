@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Spreadsheet</string>
   </property>
   <property name="styleSheet">
    <string notr="true">/*
@@ -1056,7 +1056,7 @@ QProgressBar::chunk {
        </size>
       </property>
       <property name="text">
-       <string>Zamknij</string>
+       <string>Close</string>
       </property>
      </widget>
     </item>

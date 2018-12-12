@@ -28,7 +28,7 @@ void MainWindow::setConnectionString(QString str)
 
     if (file.open(QIODevice::WriteOnly))
     {
-        QMessageBox::information(this, tr("Komunikat serwera"), tr("Pomyślnie zapisano ścieżkę bazy danych"));
+        QMessageBox::information(this, tr("Spreadsheet"), tr("The database path has been successfully saved"));
         QTextStream stream(&file);
         stream << str;
     }
@@ -51,7 +51,7 @@ void MainWindow::db_placeholder()
         }
         else
         {
-            ui->dbPath->setText("Wybierz bazę danych...");
+            ui->dbPath->setText("Choose database file...");
         }
     }
 
@@ -62,7 +62,7 @@ void MainWindow::on_addDatabase_clicked()
 {
     dbPath = QFileDialog::getOpenFileName(
                  this,
-                 tr("Wybierz Bazę danych"),
+                 tr("Choose database file"),
                  "../",
                  "Pliki Bazy SQLITE (*.db)");
 

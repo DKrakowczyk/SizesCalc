@@ -180,7 +180,7 @@ void Choose::on_zapisz_dlugosc_clicked()
                              "KOŁO",
                              QString::number(wymiarPromien)+" mm","-");
 
-            QMessageBox::information(this, tr("Komunikat arkusza"), tr("Pomyślnie zapisano do bazy danych!"));
+            QMessageBox::information(this, tr("Spredsheet"), tr("Successfully saved to the database!"));
         }
         else
         {
@@ -191,12 +191,12 @@ void Choose::on_zapisz_dlugosc_clicked()
                              "KWADRAT",
                              "-",QString::number(wymiarA)+" mm");
 
-            QMessageBox::information(this, tr("Komunikat arkusza"), tr("Pomyślnie zapisano do bazy danych!"));
+            QMessageBox::information(this, tr("Spredsheet"), tr("Successfully saved to the database!"));
         }
     }
     else
     {
-        QMessageBox::information(this, tr("Komunikat arkusza"), tr("Skonfiguruj ścieżę do bazy danych!"));
+        QMessageBox::information(this, tr("Spredsheet"), tr("Configure the path to the database!"));
     }
 }
 
@@ -221,7 +221,7 @@ void Choose::on_zapisz_wysokosc_clicked()
                              "KOŁO",
                              QString::number(wymiarPromien)+" mm","-");
 
-            QMessageBox::information(this, tr("Komunikat arkusza"), tr("Pomyślnie zapisano do bazy danych!"));
+            QMessageBox::information(this, tr("Spredsheet"), tr("Successfully saved to the database!"));
         }
         else
         {
@@ -232,12 +232,12 @@ void Choose::on_zapisz_wysokosc_clicked()
                              "KWADRAT",
                              "-",QString::number(wymiarA)+" mm");
 
-            QMessageBox::information(this, tr("Komunikat arkusza"), tr("Pomyślnie zapisano do bazy danych!"));
+            QMessageBox::information(this, tr("Spredsheet"), tr("Successfully saved to the database!"));
         }
     }
     else
     {
-        QMessageBox::information(this, tr("Komunikat arkusza"), tr("Skonfiguruj ścieżę do bazy danych!"));
+        QMessageBox::information(this, tr("Spredsheet"), tr("Configure the path to the database!"));
     }
 }
 

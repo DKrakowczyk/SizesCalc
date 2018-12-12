@@ -9,13 +9,14 @@ void BazaDanych::startDb()
 {
     mydb = QSqlDatabase::addDatabase(dbType);
     mydb.setDatabaseName(pathToDbFile);
-    if(!mydb.open())
+    if(pathToDbFile=="")
     {
-        status = "Błąd połączenia z bazą danych...";
+        status = "Connection error with the database ...";
+
     }
     else
     {
-        status = "Połączono z bazą danych!  |  Podwójne klinięcie w rekord kasuje element z bazy";
+        status = "Connected to database!  |  A double-click in the record deletes the element from the database";
     }
 }
 
