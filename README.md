@@ -22,7 +22,7 @@ The application consists of three main user windows:
 
 ### #Connection to the database
 To connect to a local database:
-- Click on the "Add database" button and then select the file **database.db** from the subdirectory **_ database**
+- Click on the "Add database" button and then select the file **database.db** from the subdirectory **_database**
 
 The path to the database will be automatically loaded each time the program is started. The configuration is only required for the first run
 	
@@ -44,6 +44,6 @@ Press the button **"Data Base"**, and then select **"View database"** in the mai
  
 ![Baza](https://github.com/DKrakowczyk/SizesCalc/blob/master/screenshots/database.PNG?raw=true)
 
-Browsing the contents of the database is possible using the ** slider ** at the bottom of the table.
+Browsing the contents of the database is possible using the **slider** at the bottom of the table.
 
-In order to remove an item from the database, double-click on ** any record cell ** that we want to delete. We will then receive a message about the correct course of the operation.
+In order to remove an item from the database, double-click on **any record cell** that we want to delete. We will then receive a message about the correct course of the operation.
