@@ -1,46 +1,49 @@
 ### #SizesCalc
 | C++ | QT |
 |--|--|
-|
-
-Aplikacja **SizesCalc** pozwala na obliczanie, w zależności od wybranej opcji, długości pręta lub wysokości wykorzystanego wlewka w procesach kucia i wyciskania. 
 
 
-### #Struktura aplikacji
-Aplikacja składa się z trzech głównych okien użytkownika :
-> Okno konfiguracji programu oraz wyboru akcji, 
 
-> Okno arkusza kalkulacyjnego, 
+**SizesCalc** application allows to calculate length or height of the bar, depending on the choosen option. 
 
-> Okno bazy danych
+
+### #Application structure
+The application consists of three main user windows:
+
+> Program configuration window and action selection,
+
+> Spreadsheet window,
+
+> Database window
 
 
 ![Okno wyboru](https://github.com/DKrakowczyk/SizesCalc/blob/master/screenshots/main.PNG?raw=true)
 
 
-### #Połączenie z bazą danych
-Aby połączyć się z lokalną bazą danych należy:
--  Kliknąć w przycisk “Dodaj bazę danych”, a następnie wybrać plik **database.db** z podkatalogu **_database**
+### #Connection to the database
+To connect to a local database:
+- Click on the "Add database" button and then select the file **database.db** from the subdirectory **_ database**
 
-Ścieżka do bazy danych zostanie automatycznie wczytana przy każdym kolejnym uruchomieniu programu. jej konfiguracja jest wymagana wyłącznie w przypadku pierwszego uruchomienia 
+The path to the database will be automatically loaded each time the program is started. The configuration is only required for the first run
 	
-### #Arkusz kalkulacyjny
-W celu uzyskania długości pręta konieczne jest uzupełnienie wartościami pól lewej lub prawej części okna, w zależności od posiadanych parametrów wejściowych.
+### #Spreadsheet
 
- Domyślnie obliczenia dokonywane są dla pręta, którego przekrój jest kwadratem. Po kliknięciu w jakąkolwiek część interfejsu oraz zmianie danych, program automatycznie przeliczy zadane wartości oraz wyświetli wynik. 
+In order to obtain the length of the bar, it is necessary to supplement the values ​​of the left or right part of the window, depending on the input parameters.
+
+By default, calculations are made for a bar whose cross-section is a square. After clicking on any part of the interface and changing data, the program will automatically calculate the set values ​​and display the result.
  
-Możliwa jest również zmiana zadanej objętości odpadu lub przyjęcie jej domyślnej wartości. 
+It is also possible to change the set waste volume or to adopt its default value. 
 
 ![Okno arkusza kalkulacyjnego](https://github.com/DKrakowczyk/SizesCalc/blob/master/screenshots/calculate.PNG?raw=true)
 
-W razie konieczności zapisu danych pomiarowych oraz wyników w bazie danych, w celu ich późniejszego wykorzystania, konieczne jest wciśnięcie przycisku **“Zapisz do bazy danych”**.
+If it is necessary to save measurement data and results in the database, in order to use them later, it is necessary to press the button **"Save to the database"**.
 
 ## #Baza danych
 
- Wcisnąć przycisk **“Baza Danych”**, a następnie wybrać **“Wyświetl bazę danych”** w głównym oknie programu.
+Press the button **"Data Base"**, and then select **"View database"** in the main program window.
  
 ![Baza](https://github.com/DKrakowczyk/SizesCalc/blob/master/screenshots/database.PNG?raw=true)
 
-Przeglądanie zawartości bazy danych możliwe jest za pomocą **suwaka** na dole tabeli.
+Browsing the contents of the database is possible using the ** slider ** at the bottom of the table.
 
- W celu usunięcia elementu z bazy, należy dwukrotnie kliknąć w **jakąkolwiek komórkę rekordu**, który chcemy usunąć. Otrzymamy wtedy komunikat o poprawnym przebiegu operacji.
+In order to remove an item from the database, double-click on ** any record cell ** that we want to delete. We will then receive a message about the correct course of the operation.
