@@ -47,3 +47,7 @@ Press the button **"Data Base"**, and then select **"View database"** in the mai
 Browsing the contents of the database is possible using the **slider** at the bottom of the table.
 
 In order to remove an item from the database, double-click on **any record cell** that we want to delete. We will then receive a message about the correct course of the operation.
+
+##
+ [theme](https://github.com/ColinDuquesnoy/QDarkStyleSheet) [icons](https://www.flaticon.com/)
+##
